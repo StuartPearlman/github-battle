@@ -1,0 +1,32 @@
+{
+  "name": "github-battle",
+  "version": "1.0.0",
+  "description": "Following along with Tyler McGinnis's React tutorial",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StuartPearlman/github-battle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StuartPearlman/github-battle/issues"
+  },
+  "homepage": "https://github.com/StuartPearlman/github-battle#readme",
+  "dependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "html-webpack-plugin": "^2.16.0",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
