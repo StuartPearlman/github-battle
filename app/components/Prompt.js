@@ -14,16 +14,18 @@ function Prompt(props) {
             <input
               className="form-control"
               placeholder="Github Username"
-              onChange={ props.onUpdateUser }
+              type="text"
+              autoFocus={ true }
               value={ props.username }
-              type="text" />
+              onChange={ props.onUpdateUser } />
           </div>
 
           <div className="form-group col-sm-4 col-sm-offset-4">
             <button
               className="btn btn-block btn-success"
-              type="submit">
-                Continue
+              type="submit"
+            >
+              Continue
             </button>
           </div>
         </form>

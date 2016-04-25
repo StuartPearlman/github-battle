@@ -5,10 +5,10 @@ var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
 
-var Main = require('../components/Main');
 var Home = require('../components/Home');
-var PromptContainer = require('../containers/PromptContainer');
+var Main = require('../components/Main');
 var ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
+var PromptContainer = require('../containers/PromptContainer');
 var ResultsContainer = require('../containers/ResultsContainer');
 
 var routes = (

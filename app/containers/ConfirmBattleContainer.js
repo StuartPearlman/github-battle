@@ -14,6 +14,7 @@ var ConfirmBattleContainer = React.createClass({
   },
   componentDidMount: function() {
     var query = this.props.location.query;
+
     githubHelpers.getPlayersInfo([ query.playerOne, query.playerTwo ])
     .then(function(players) {
       this.setState({
@@ -28,7 +29,7 @@ var ConfirmBattleContainer = React.createClass({
       state: {
         playersInfo: this.state.playersInfo
       }
-    })
+    });
   },
   render: function() {
     return (

@@ -32,7 +32,7 @@ function getPlayersData(player) {
 function calculateScores(players) {
   return [
     players[0].followers * 3 + players[0].totalStars,
-    players[1].followers * 3 + players[1].totalStars,
+    players[1].followers * 3 + players[1].totalStars
   ];
 }
 
@@ -40,12 +40,14 @@ var helpers = {
   getPlayersInfo: function(players) {
     return axios.all(players.map(function(username) {
       return getUserInfo(username);
-    })).then(function(info) {
+    }))
+    .then(function(info) {
       return info.map(function(user) {
         return user.data;
       });
-    }).catch(function(error) {
-      console.warn('Error in getPlayersInfo', error);
+    })
+    .catch(function(error) {
+      console.warn('Error in githubHelpers.getPlayersInfo', error);
     });
   },
   battle: function(players) {
@@ -55,7 +57,7 @@ var helpers = {
     return axios.all([ playerOneData, playerTwoData ])
     .then(calculateScores)
     .catch(function(error) {
-      console.warn('Error in battle', error);
+      console.warn('Error in githubHelpers.battle', error);
     });
   }
 };
