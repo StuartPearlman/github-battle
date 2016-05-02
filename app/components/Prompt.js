@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import transparentBg from '../styles';
+import { transparentBg } from '../styles';
 
 // functional stateless component
 function Prompt(props) {
